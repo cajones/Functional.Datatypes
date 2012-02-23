@@ -1,0 +1,10 @@
+C:\Projects\Functional.Datatypes\Datatypes\bin\Debug\Functional.Datatypes.dll
+C:\Projects\Functional.Datatypes\Datatypes\bin\Debug\Functional.Datatypes.pdb
+C:\Projects\Functional.Datatypes\Datatypes\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\Functional.Datatypes\Datatypes\obj\Debug\Functional.Datatypes.dll
+C:\Projects\Functional.Datatypes\Datatypes\obj\Debug\Functional.Datatypes.pdb
+C:\Projects\Functional.Datatypes\Functional.Datatypes\bin\Debug\Functional.Datatypes.dll
+C:\Projects\Functional.Datatypes\Functional.Datatypes\bin\Debug\Functional.Datatypes.pdb
+C:\Projects\Functional.Datatypes\Functional.Datatypes\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\Functional.Datatypes\Functional.Datatypes\obj\Debug\Functional.Datatypes.dll
+C:\Projects\Functional.Datatypes\Functional.Datatypes\obj\Debug\Functional.Datatypes.pdb

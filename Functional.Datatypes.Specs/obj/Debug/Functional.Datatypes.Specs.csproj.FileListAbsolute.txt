@@ -1,0 +1,7 @@
+C:\Projects\Functional.Datatypes\Functional.Datatypes.Specs\bin\Debug\Functional.Datatypes.Specs.dll
+C:\Projects\Functional.Datatypes\Functional.Datatypes.Specs\bin\Debug\Functional.Datatypes.Specs.pdb
+C:\Projects\Functional.Datatypes\Functional.Datatypes.Specs\bin\Debug\Functional.Datatypes.dll
+C:\Projects\Functional.Datatypes\Functional.Datatypes.Specs\bin\Debug\Functional.Datatypes.pdb
+C:\Projects\Functional.Datatypes\Functional.Datatypes.Specs\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\Functional.Datatypes\Functional.Datatypes.Specs\obj\Debug\Functional.Datatypes.Specs.dll
+C:\Projects\Functional.Datatypes\Functional.Datatypes.Specs\obj\Debug\Functional.Datatypes.Specs.pdb
