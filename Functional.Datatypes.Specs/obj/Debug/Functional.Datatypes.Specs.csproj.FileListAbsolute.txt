@@ -5,3 +5,7 @@ C:\Projects\Functional.Datatypes\Functional.Datatypes.Specs\bin\Debug\Functional
 C:\Projects\Functional.Datatypes\Functional.Datatypes.Specs\obj\Debug\ResolveAssemblyReference.cache
 C:\Projects\Functional.Datatypes\Functional.Datatypes.Specs\obj\Debug\Functional.Datatypes.Specs.dll
 C:\Projects\Functional.Datatypes\Functional.Datatypes.Specs\obj\Debug\Functional.Datatypes.Specs.pdb
+C:\Projects\Functional.Datatypes\Functional.Datatypes.Specs\bin\Debug\Machine.Specifications.Clr4.dll
+C:\Projects\Functional.Datatypes\Functional.Datatypes.Specs\bin\Debug\Machine.Specifications.dll
+C:\Projects\Functional.Datatypes\Functional.Datatypes.Specs\bin\Debug\NSubstitute.dll
+C:\Projects\Functional.Datatypes\Functional.Datatypes.Specs\bin\Debug\NSubstitute.xml
