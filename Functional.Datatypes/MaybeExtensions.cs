@@ -12,7 +12,11 @@ namespace Functional.Datatypes
                         ? binder(self.Value)
                         : Maybe<B>.Nothing;
         }
-        public static Maybe<T> Handle<T>(this Maybe<T> self, Action<T> action)
+        public static Maybe<B> When<A, B>(this Maybe<A> self, Func<A, Maybe<B>> expression)
+        {
+            return Bind(self, expression);
+        }
+        public static Maybe<T> When<T>(this Maybe<T> self, Action<T> action)
         {
             if (self.HasValue)
                 action(self.Value);
