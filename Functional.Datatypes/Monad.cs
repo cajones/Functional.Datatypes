@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Functional.Datatypes
 {
@@ -22,6 +19,11 @@ namespace Functional.Datatypes
         public static Maybe<T3> Both<T1, T2, T3>(Func<Maybe<T1>> first, Func<Maybe<T2>> second, Func<T1, T2, T3> binder)
         {
             return first().Bind(firstResult => second().Bind(secondResult => Maybe.Just(binder(firstResult, secondResult))));
+        }
+
+        public static Maybe<Tuple<T1, T2>> Both<T1, T2>(Func<Maybe<T1>> first, Func<Maybe<T2>> second)
+        {
+            return Both(first, second, Tuple.Create);
         }
     }
 }
