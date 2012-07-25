@@ -2,7 +2,7 @@
 
 namespace Functional.Datatypes
 {
-    public sealed class Maybe<T>
+    public sealed class Maybe<T> : IEquatable<Maybe<T>>
     {
         private readonly T _value;
         private readonly bool _hasValue;
@@ -25,23 +25,57 @@ namespace Functional.Datatypes
                 return _value;
             }
         }
-        public Maybe(T value)
+        internal Maybe(T value)
         {
             _hasValue = true;
             _value = value;
         }
-        private Maybe()
+        internal Maybe()
         {
             _hasValue = false;
             _value = default(T);
         }
+
+        #region Equality
+        public override bool Equals(object obj)
+        {
+            if (ReferenceEquals(null, obj)) return false;
+            if (ReferenceEquals(this, obj)) return true;
+            if (obj.GetType() != typeof(Maybe<T>)) return false;
+            return Equals((Maybe<T>)obj);
+        }
+
+        public bool Equals(Maybe<T> other)
+        {
+            if (ReferenceEquals(null, other)) return false;
+            if (ReferenceEquals(this, other)) return true;
+            return Equals(other._value, _value);
+        }
+
+        public override int GetHashCode()
+        {
+            return _value.GetHashCode();
+        }
+
+        public static bool operator ==(Maybe<T> left, Maybe<T> right)
+        {
+            return Equals(left, right);
+        }
+
+        public static bool operator !=(Maybe<T> left, Maybe<T> right)
+        {
+            return !Equals(left, right);
+        } 
+        #endregion
     }
 
     public sealed class Maybe
     {
         public static Maybe<T> Just<T>(T value)
         {
-            return new Maybe<T>(value);
+            return Equals(value, null) 
+                        ? Maybe<T>.Nothing 
+                        : new Maybe<T>(value);
         }
     }
 }

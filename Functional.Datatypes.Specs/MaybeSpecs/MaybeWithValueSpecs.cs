@@ -31,4 +31,22 @@ namespace Functional.Datatypes.Specs.MaybeWithValueSpecs
 
         const string the_bound_value = "the bound value";
     }
+
+    [Subject("Given two just values with the same value")]
+    public class when_comparing_them
+    {
+        private Establish context = () =>
+        {
+            var o = new object();
+            maybe_a = Maybe.Just(o);
+            maybe_b = Maybe.Just(o);
+        };
+
+        private Because of = () => { };
+
+        private It should_be_equal = () => (maybe_a == maybe_b).ShouldBeTrue();
+
+        private static Maybe<object> maybe_a;
+        private static Maybe<object> maybe_b;
+    }
 }
