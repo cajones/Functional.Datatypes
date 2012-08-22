@@ -12,7 +12,15 @@ namespace Functional.Datatypes
                         ? binder(self.Value)
                         : Maybe<B>.Nothing;
         }
+        public static Maybe<B> Bind<A, B>(this Maybe<A> self, Func<A, B> expression)
+        {
+            return Bind(self, a => Maybe.Just(expression(a)));
+        }
         public static Maybe<B> When<A, B>(this Maybe<A> self, Func<A, Maybe<B>> expression)
+        {
+            return Bind(self, expression);
+        }
+        public static Maybe<B> When<A, B>(this Maybe<A> self, Func<A, B> expression)
         {
             return Bind(self, expression);
         }

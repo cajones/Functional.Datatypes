@@ -32,6 +32,16 @@ namespace Functional.Datatypes.Specs.MaybeWithValueSpecs
         const string the_bound_value = "the bound value";
     }
 
+    [Subject("Given a maybe with just a value")]
+    public class when_binding_to_a_non_maybe : MaybeValueContext
+    {
+        Because of = () => { result = the_maybe.When(value => the_bound_value); };
+
+        It should_provide_a_maybe_containing_the_bound_value = () => ((Maybe<string>)result).Value.ShouldEqual(the_bound_value);
+
+        const string the_bound_value = "the bound value";
+    }
+
     [Subject("Given two just values with the same value")]
     public class when_comparing_them
     {
